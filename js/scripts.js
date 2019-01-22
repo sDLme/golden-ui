@@ -35,15 +35,23 @@
 $(document).ready(function() {
 
 
-    $(".intro-img_pre-img").click( function () {
-
-        // show modal window
-        $('#leave-modal-id').modal('show');
-
-    });
+    // $(".intro-img_pre-img").click( function () {
+    //
+    //     // show modal window
+    //     $('#leave-modal-id').modal('show');
+    //
+    // });
 
 
 })
+
+document.addEventListener("mouseleave", function(e){
+    if( e.clientY < 0 )
+    {
+        // show modal window
+        $('#leave-modal-id').modal('show');
+    }
+}, false);
 
 // // Exit intent
 // function addEvent(obj, evt, fn) {
@@ -126,6 +134,7 @@ function onYouTubePlayerAPIReady() {
 //
 // })
 
+
 $( document ).ready(function() {
     $('.products__slider').slick({
         slidesToShow: 1,
@@ -135,7 +144,6 @@ $( document ).ready(function() {
     });
 
 });
-
 
 
 $( document ).ready(function() {
@@ -149,7 +157,9 @@ $( document ).ready(function() {
 });
 
 
-
 $( document ).ready(function() {
 
+    $( 'a:empty' ).remove();
+
 });
+
