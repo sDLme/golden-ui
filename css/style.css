@@ -9212,7 +9212,7 @@ ul {
     left: 0;
     width: 100%;
     height: 35px;
-    background: url("/img/after-bg.jpg") center center no-repeat;
+    background: url("img/after-bg.jpg") center center no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
     z-index: 100; }
@@ -9226,7 +9226,7 @@ ul {
     left: 0;
     width: 100%;
     height: 35px;
-    background: url("/img/before-bg.jpg") center center no-repeat;
+    background: url("img/before-bg.jpg") center center no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
     z-index: 100; }
