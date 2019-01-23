@@ -134,7 +134,6 @@ function onYouTubePlayerAPIReady() {
 //
 // })
 
-
 $( document ).ready(function() {
     $('.products__slider').slick({
         slidesToShow: 1,
@@ -144,6 +143,7 @@ $( document ).ready(function() {
     });
 
 });
+
 
 
 $( document ).ready(function() {
@@ -157,9 +157,9 @@ $( document ).ready(function() {
 });
 
 
+
 $( document ).ready(function() {
 
     $( 'a:empty' ).remove();
 
 });
-

@@ -9480,11 +9480,8 @@ ul {
     color: #ffffff !important;
     -webkit-border-radius: 10px;
             border-radius: 10px;
-    background-color: #5b9aaa; }
-    .action-btn__text--border {
-      background-color: #eeefef;
-      color: #5b9aaa !important;
-      border: 3px solid #5b9aaa; }
+    background-color: #5b9aaa;
+    cursor: pointer; }
 
 .category {
   padding: 30px 0 60px; }
@@ -9504,3 +9501,6 @@ ul {
 .footer {
   padding: 23px 0 20px;
   background: #eeefef; }
+  .footer .leave-text {
+    line-height: 28px;
+    font-size: 23px; }
