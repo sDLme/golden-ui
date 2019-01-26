@@ -6,23 +6,24 @@
     <title>Title</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css?version=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <meta name="format-detection" content="telephone=no">
   </head>
   <body>
       <div class="header">
         <div class="container">
-          <div class="row header__content d-flex justify-content-center align-items-baseline"><a class="logo col-1" href="index.html"><img src="img/logo.png"></a>
-              <div class="navigation col-8">
-                <ul class="navigatio__list d-flex align-items-center justify-content-between flex-wrap">
-                  <li class="navifation__item"><a class="navigation__link" href="reklama.html">Реклама</a></li>
-                  <li class="navifation__item"><a class="navigation__link" href="license.html">Лицензии</a></li>
-                  <li class="navifation__item"><a class="navigation__link" href="license-singl.html">Digital</a></li>
-                  <li class="navifation__item"><a class="navigation__link" href="reklama-singl.html">Мероприятия</a></li>
-                  <li class="navifation__item"><a class="navigation__link" href="#">Магазины</a></li>
-                  <li class="navifation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          <div class="row header__content d-flex justify-content-around align-items-baseline"><a class="logo text-left pl-20" href="index.html"><img src="img/logo.png"></a><a class="icon d-md-block d-lg-none d-xl-none text-right pr-20" href="javascript:void(0)"><img class="fa fa-bars" src="img/mob-icon.png"></a>
+              <div class="navigation">
+                <ul class="navigation__list d-flex align-items-center justify-content-between flex-wrap">
+                  <li class="navigation__item"><a class="navigation__link" href="reklama.html">Реклама</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="license.html">Лицензии</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="license-singl.html">Digital</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="reklama-singl.html">Мероприятия</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="#">Магазины</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li><a class="link d-md-block d-lg-none d-xl-none ml-20 mr-15 mt-15" href="tel:84959887337">8 (495) 988-73-37</a>
                 </ul>
-              </div><a class="link col-3" href="tel:84959887337">8 (495) 988-73-37</a>
+              </div><a class="link d-none d-sm-none d-md-none d-lg-block" href="tel:84959887337">8 (495) 988-73-37</a>
           </div>
         </div>
       </div>
@@ -87,7 +88,7 @@
             </header>
           <div class="row">
             <div class="col-12">
-              <div class="slider">
+              <div class="review-slider">
                   <div class="review-item text-center">
                     <div class="review-item__img-wrap mb-25"><img class="review-item__img m-auto" src="img/rewie-img.jpg"></div>
                     <p class="review-item__dscr">«0+ Media» – первая российская компания, реализующая стратегию комплексного подхода в продвижении и коммерческой реализации медиа ресурсов, лицензионных брендов, товаров и услуг для детей и родителей.</p>
@@ -134,13 +135,12 @@
           <div class="row">
             <div class="col-12">
               <div class="logo-slider">
-                  <div class="logo-item"><img class="logo-item__img" src="img/logo-p-2.png"></div>
-                  <div class="logo-item"><img class="logo-item__img" src="img/logo-p-3.png"></div>
-                  <div class="logo-item"><img class="logo-item__img" src="img/logo-p-4.png"></div>
-                  <div class="logo-item"><img class="logo-item__img" src="img/logo-p-5.png"></div>
-                  <div class="logo-item"><img class="logo-item__img" src="img/partner-logo.png"></div>
-                  <div class="logo-item"><img class="logo-item__img" src="img/logo-p-2.png"></div>
-                  <div class="logo-item"><img class="logo-item__img" src="img/logo-p-2.png"></div>
+                  <div class="logo-item text-center"><img class="logo-item__img" src="img/logo-p-2.png"></div>
+                  <div class="logo-item text-center"><img class="logo-item__img" src="img/logo-p-3.png"></div>
+                  <div class="logo-item text-center"><img class="logo-item__img" src="img/logo-p-4.png"></div>
+                  <div class="logo-item text-center"><img class="logo-item__img" src="img/logo-p-5.png"></div>
+                  <div class="logo-item text-center"><img class="logo-item__img" src="img/partner-logo.png"></div>
+                  <div class="logo-item text-center"><img class="logo-item__img" src="img/logo-p-2.png"></div>
               </div>
             </div>
           </div>
@@ -150,13 +150,15 @@
         <div class="container">
           <p class="leave-text text-center mb-0">Хотите стать нашим клиентом?</p>
           <p class="leave-text text-center mb-0">Оставьте свои контакты и мы вам перезвоним</p>
-          <div class="row"><a class="logo col-1" href="index.html"><img src="img/logo.png"></a>
-              <form class="form col-11 d-flex justify-content-between align-items-center">
+          <div class="row"><a class="logo col-1 d-none d-sm-none d-md-none d-lg-block" href="index.html"><img src="img/logo.png"></a>
+              <form class="form col-11 d-flex justify-content-between align-items-center m-auto">
                 <input class="input" type="text" placeholder="Имя">
                 <input class="input" type="email" placeholder="Email">
                 <input class="input" placeholder="тедефон">
                 <button class="button" type="submit">Отправить</button>
               </form>
+          </div>
+          <div class="row align-items-center pt-10 d-md-block d-lg-none d-xl-none"><a class="logo col-4 text-center" href="index.html"><img src="img/logo.png"></a><a class="link col-8 text-center" href="tel:84959887337">8 (495) 988-73-37</a>
           </div>
         </div>
       </div>

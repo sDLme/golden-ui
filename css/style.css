@@ -1451,6 +1451,22 @@ mark,
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
+.media {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.media-body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
 .close {
   float: right;
   font-size: 1.5rem;
@@ -9160,6 +9176,9 @@ h2 {
   line-height: 44.26px;
   color: #868282;
   margin-bottom: 15px; }
+  @media (max-width: 767.98px) {
+    h2 {
+      font-size: 30px; } }
 
 h3 {
   font-size: 24px;
@@ -9238,6 +9257,40 @@ ul {
   color: #5b9aaa; }
 
 /* Blocks */
+@media (max-width: 991.98px) {
+  .logo {
+    width: 50%; } }
+
+@media (max-width: 991.98px) {
+  .navigation {
+    display: none; } }
+
+.navigation__list {
+  padding-left: 0; }
+  @media (max-width: 991.98px) {
+    .navigation__list {
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      z-index: 250;
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-bottom: 15px;
+      background: #ffffff; } }
+
+@media (max-width: 991.98px) {
+  .navigation__active {
+    display: block; } }
+
+.navigation__item {
+  margin: 0 15px; }
+  @media (max-width: 991.98px) {
+    .navigation__item {
+      display: block;
+      width: 100%;
+      padding: 5px; } }
+
 .navigation__link {
   color: #868282; }
   .navigation__link:hover {
@@ -9263,6 +9316,7 @@ ul {
     color: #5b9aaa; }
 
 .title__link {
+  margin-top: 4px;
   margin-left: 15px;
   padding: 3px 7px;
   line-height: 20px;
@@ -9275,6 +9329,15 @@ ul {
   .title__link:hover {
     color: #5b9aaa;
     opacity: 0.7; }
+
+@media (max-width: 991.98px) {
+  .logo-item {
+    display: inline-block;
+    width: 30%; } }
+
+@media (max-width: 800px) {
+  .logo-item__img {
+    width: 100%; } }
 
 .category-item__img {
   margin: 0 5px;
@@ -9321,6 +9384,9 @@ ul {
     -webkit-border-radius: 10px;
             border-radius: 10px;
     background-color: #5b9aaa; }
+    @media (max-width: 800px) {
+      .card__item {
+        width: 100%; } }
     .card__item h3 {
       font-size: 40px; }
     .card__item--border {
@@ -9389,6 +9455,15 @@ ul {
 .form .button {
   width: 24%;
   margin-left: 5px; }
+  @media (max-width: 991.98px) {
+    .form .button {
+      width: 47%; } }
+
+@media (max-width: 991.98px) {
+  .form {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
 
 .input {
   width: 24%;
@@ -9399,9 +9474,17 @@ ul {
   border: 3px solid #ffffff;
   background: transparent;
   outline: none; }
+  @media (max-width: 991.98px) {
+    .input {
+      width: 47%;
+      margin: 3px; } }
 
 .header {
+  position: relative;
   padding: 10px 0; }
+  @media (max-width: 991.98px) {
+    .header__content .icon {
+      width: 50%; } }
   .header__content .link {
     font-weight: 700;
     color: #5b9aaa; }
@@ -9410,7 +9493,8 @@ ul {
   padding-top: 30px; }
   .intro-img__main-img {
     position: relative;
-    z-index: 101; }
+    z-index: 101;
+    width: 100%; }
 
 .intro-bg {
   height: 37vh;
@@ -9418,11 +9502,17 @@ ul {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
+  @media (max-width: 800px) {
+    .intro-bg {
+      height: 18vh; } }
 
 .products {
   padding: 27px 0; }
   .products .picture__img {
     width: auto !important; }
+    @media (max-width: 800px) {
+      .products .picture__img {
+        width: 100% !important; } }
 
 .intro-text {
   background-position: center center;
@@ -9432,6 +9522,9 @@ ul {
   .intro-text__title {
     margin-bottom: 40px;
     padding: 0 55px; }
+    @media (max-width: 800px) {
+      .intro-text__title {
+        padding: 0; } }
   .intro-text__dscr {
     font-size: 22px;
     line-height: 27.57px;
@@ -9504,3 +9597,7 @@ ul {
   .footer .leave-text {
     line-height: 28px;
     font-size: 23px; }
+  .footer .link {
+    font-size: 25px;
+    font-weight: 700;
+    color: #5b9aaa; }

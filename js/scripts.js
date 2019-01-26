@@ -27,6 +27,15 @@
 
 
 
+$( document ).ready(function() {
+
+    $('.icon').click (function () {
+        $('.navigation').toggleClass('navigation__active')
+    })
+
+
+})
+
 
 
 
@@ -91,11 +100,54 @@ $( document ).ready(function() {
         slidesToScroll: 1,
         dots: true,
         arrow: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
     });
 
     $('.picture__slider--row').slick({
         dots: true,
         arrow: false,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
     });
 });
 
@@ -144,6 +196,41 @@ $( document ).ready(function() {
 
 });
 
+$( document ).ready(function() {
+    $('.review-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        arrow: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
+
+    });
+});
 
 
 $( document ).ready(function() {
@@ -152,6 +239,24 @@ $( document ).ready(function() {
         slidesToScroll: 1,
         dots: true,
         arrow: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 799,
+                settings: "unslick",
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
 
     });
 });
